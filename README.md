@@ -105,6 +105,8 @@ Referencias de composicao de telas inteiras ou secoes maiores, como dashboards, 
 
 Referencias de aparencia para temas claro, escuro e sistema. Inclui exemplos de alternadores de tema, contraste, superficie, sombras e estados ativos.
 
+Veja a previa visual completa e um prompt pronto para copiar e colar em [`themes/README.md`](./themes/README.md).
+
 ### Animations
 
 Referencias visuais ou sequenciais de movimento, transicoes, microinteracoes e comportamento animado.
