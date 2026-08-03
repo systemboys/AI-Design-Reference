@@ -113,6 +113,8 @@ Veja a previa visual completa e um prompt pronto para copiar e colar em [`themes
 
 Referencias visuais ou sequenciais de movimento, transicoes, microinteracoes e comportamento animado.
 
+Veja o guia de skeleton loading, com padrao de CSS, organizacao de componentes e prompt pronto, em [`animations/skeleton-loading/README.md`](./animations/skeleton-loading/README.md).
+
 ### Typography
 
 Referencias de hierarquia tipografica, escala, peso, alinhamento e combinacoes de texto.
