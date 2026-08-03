@@ -97,6 +97,8 @@ Sempre que possivel, o nome do arquivo deve indicar:
 
 Referencias de elementos reutilizaveis de interface, como botoes, inputs, cards, modais e navegacao.
 
+Veja o guia de biblioteca de imagens / seletor de imagem para upload, com modelo de dados, backend e prompt pronto, em [`components/image-library/README.md`](./components/image-library/README.md).
+
 ### Layouts
 
 Referencias de composicao de telas inteiras ou secoes maiores, como dashboards, paineis administrativos, landing pages e telas mobile.
