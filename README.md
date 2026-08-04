@@ -99,6 +99,8 @@ Referencias de elementos reutilizaveis de interface, como botoes, inputs, cards,
 
 Veja o guia de biblioteca de imagens / seletor de imagem para upload, com modelo de dados, backend e prompt pronto, em [`components/image-library/README.md`](./components/image-library/README.md).
 
+Veja a galeria de modelos de barra de rolagem customizada, com o padrao "Thin Light" e prompt pronto, em [`components/scroll-bars/README.md`](./components/scroll-bars/README.md).
+
 ### Layouts
 
 Referencias de composicao de telas inteiras ou secoes maiores, como dashboards, paineis administrativos, landing pages e telas mobile.

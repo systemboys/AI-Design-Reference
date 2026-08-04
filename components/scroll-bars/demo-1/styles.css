@@ -1,0 +1,257 @@
+:root {
+  color-scheme: light;
+  --page: #f4f6f8;
+  --ink: #18212f;
+  --muted: #5d6878;
+  --line: #d8dee7;
+  --panel: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--page);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 36px 0 48px;
+}
+
+.page-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #0f766e;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.05;
+}
+
+.source {
+  max-width: 420px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 18px;
+}
+
+.sample {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 14px 36px rgba(24, 33, 47, 0.08);
+}
+
+.sample-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 32px;
+  margin-bottom: 12px;
+}
+
+.sample-title h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.sample-title code {
+  color: #4b5563;
+  font-size: 0.76rem;
+  white-space: nowrap;
+}
+
+.scroll-box {
+  width: 100%;
+  height: 240px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 18px;
+  background: #fbfcfd;
+  line-height: 1.6;
+  scrollbar-width: thin;
+}
+
+.scroll-box p {
+  margin-bottom: 16px;
+}
+
+.scroll-box p:last-child {
+  margin-bottom: 0;
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  border-radius: 999px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb:hover {
+  filter: brightness(0.92);
+}
+
+.slim-dark {
+  scrollbar-color: rgba(51, 51, 51, 0.68) transparent;
+}
+
+.slim-dark::-webkit-scrollbar {
+  width: 7px;
+}
+
+.slim-dark::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slim-dark::-webkit-scrollbar-thumb {
+  background: rgba(51, 51, 51, 0.68);
+  border-radius: 5px;
+}
+
+.soft-blue {
+  scrollbar-color: #3b82f6 #dbeafe;
+}
+
+.soft-blue::-webkit-scrollbar {
+  width: 10px;
+}
+
+.soft-blue::-webkit-scrollbar-track {
+  background: #dbeafe;
+}
+
+.soft-blue::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border: 2px solid #dbeafe;
+}
+
+.contrast {
+  scrollbar-color: #111827 #facc15;
+}
+
+.contrast::-webkit-scrollbar {
+  width: 12px;
+}
+
+.contrast::-webkit-scrollbar-track {
+  background: #facc15;
+}
+
+.contrast::-webkit-scrollbar-thumb {
+  background: #111827;
+  border: 2px solid #facc15;
+}
+
+.minimal {
+  scrollbar-color: #9ca3af transparent;
+}
+
+.minimal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.minimal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.minimal::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+}
+
+.inset-track {
+  scrollbar-color: #0f766e #ecfdf5;
+}
+
+.inset-track::-webkit-scrollbar {
+  width: 14px;
+}
+
+.inset-track::-webkit-scrollbar-track {
+  background: #ecfdf5;
+  border-left: 1px solid #ccfbf1;
+}
+
+.inset-track::-webkit-scrollbar-thumb {
+  background: #0f766e;
+  border: 4px solid #ecfdf5;
+}
+
+.horizontal {
+  height: 180px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: #7c3aed #ede9fe;
+}
+
+.horizontal::-webkit-scrollbar {
+  height: 12px;
+}
+
+.horizontal::-webkit-scrollbar-track {
+  background: #ede9fe;
+}
+
+.horizontal::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border: 2px solid #ede9fe;
+}
+
+.wide-content {
+  width: 820px;
+}
+
+@media (max-width: 720px) {
+  .page {
+    width: min(100% - 24px, 1180px);
+    padding-top: 24px;
+  }
+
+  .page-header {
+    display: block;
+  }
+
+  .source {
+    margin-top: 12px;
+  }
+}
